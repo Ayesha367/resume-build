@@ -1,0 +1,163 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e3f2fd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 960px;
+    width: 90%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    background: #f9f9f9;
+}
+
+/* Sidebar styles */
+.sidebar {
+    background-color: #0d47a1;
+    color: white;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.profile-pic img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 5px solid white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3 {
+    margin: 0;
+}
+
+/* Contact and education */
+.contact-info, .education {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: white;
+}
+
+.contact-info p {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 8px 0;
+}
+
+.contact-info i {
+    color: #42a5f5;
+}
+
+/* Content styles */
+.content {
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Section spacing */
+section {
+    margin-bottom: 20px;
+}
+
+/* Skill bars */
+.skills .skill-bar {
+    margin-bottom: 10px;
+}
+
+.skill-bar label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.progress {
+    background-color: #e0e0e0;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progress span {
+    display: block;
+    height: 10px;
+    background-color: #1e88e5;
+}
+
+.progress .html { width: 90%; }
+.progress .css { width: 80%; }
+.progress .typescript { width: 70%; }
+.progress .nextjs { width: 80%; }
+.progress .tailwind { width: 60%; }
+
+
+/* List styles */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Highlight styles */
+.education .highlight {
+    color: #1e88e5; /* Blue color */
+    font-weight: bold;
+}
+
+/* Responsive styles */
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .sidebar {
+        width: 300px;
+    }
+
+    .content {
+        width: calc(100% - 300px);
+    }
+}
+
+@media (max-width: 767px) {
+    .sidebar {
+        padding: 10px;
+    }
+
+    .profile-pic img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .contact-info p, .education p {
+        font-size: 0.8rem;
+    }
+
+    .skill-bar label {
+        font-size: 0.9rem;
+    }
+
+    ul li span {
+        font-size: 0.9rem;
+    }
+}
